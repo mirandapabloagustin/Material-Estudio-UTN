@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_tp2.css">
+    <title>Practica 2</title>
+</head>
+
+<body>
+        <header id="header_title">
+            <h1 class="h1_title"> Trabajo Practico N°2 </h1>
+        </header>
+        <section class="section_container">
+                <div class="div_container">
+                        <h2 class="h2_title">Ejercicio 1: Crear un objeto y mostrar propiedades </h2>
+                        <p class="contenido">
+                            Crea un objeto que represente a una persona con propiedades como nombre, edad y
+                            profesión. Luego, muestra estas propiedades utilizando alert.</p>
+                        <input type="text" id="name" placeholder="Ingrese su nombre">
+                        <input type="number" id="age" placeholder="Ingrese su edad">
+                        <input type="text" id="profession" placeholder="Ingrese su profesion">
+                            <input type="button" value="Enviar" onclick="showProperties()" class="botonAzul">
+                            
+                </div>
+                <div class="div_container">
+                    <h2 class="h2_title">Ejercicio 2 : Crean una Clase y mostrar propiedades</h2>
+                    <p class="contenido">Crea una clase llamada "Libro" que tenga propiedades como título, autor y año de
+                    publicación. Crea un método que muestre la información del libro en un formato
+                    legible y utiliza prompts para obtener la información del usuario. Luego, crea una
+                    instancia de la clase y muestra la información utilizando alert.</p>
+                    <input type ="button" value="Comezar" onclick="starAndShow()" class="botonAzul">
+                </div>
+                <div class="div_container">
+                    <h2 class="h2_title">Ejercicio 3: Crear una Clase y utilizar un metodo</h2>
+                    <p class="contenido">Utiliza la clase generada en el punto 1 añadiendo los siguientes metodos:<br>
+                    Constructor(nombre, edad, profesión): Inicializa el nombre, la edad de la persona y su
+                    profesión.
+                    <br>Saludar(): Muestra un saludo en un alert que incluya el nombre y la edad de la
+                    persona.<br>
+                    Luego, crea una instancia de la clase Persona utilizando los datos proporcionados
+                    por el usuario a través de prompts y muestra el saludo utilizando el método
+                    saludar().
+                    </p>
+                    <input type="button" value="Comezar" onclick="starAndShow2()" class="botonAzul">
+                </div>
+                <div class="div_container">
+                    <h2 class="h2_title">Ejercicio 4: Herencia con Superhéroes</h2>
+                    <p class="contenido">
+                    Crea una clase base llamada Superheroe con los siguientes métodos:<br>
+                    - Constructor(nombre, poder): Inicializa el nombre y el poder del superhéroe.<br>
+                    - Presentarse():
+                    Muestra un alert con el nombre del superhéroe y su poder.<br>
+                    Crea una clase que herede de Superheroe llamada Villano con un método adicional:<br>
+                    - Constructor(nombre, poder, plan): Inicializa el nombre, poder y plan del villano.<br>
+                    - Amenazar(): Muestra un alert con el plan del villano.<br>
+                    Crea instancias de ambas clases utilizando datos ingresados por el usuario a través
+                    de prompts y muestra sus presentaciones y amenazas respectivas.
+
+                    </p>
+                    <input type="button" value="Comezar" onclick="starAndShow3()" class="botonAzul">
+                </div>
+                <div class="div_container">
+                    <h2 class="h2_title">Ejercicio 5: Gestión de Libros</h2>
+                    <p class="contenido">
+                        
+                        Utiliza la clase generada en el punto 1 añadiendo los siguientes metodos:<br>
+                        - Constructor(titulo, autor, año de publicación): Inicializa el título, el autor del libro y el
+                        año en se lanzó el libro.<br>
+                        - MostrarDetalles(): Muestra un alert con los detalles del libro.<br>
+                        Crea una clase que herede de Libro llamada LibroDigital con un método adicional:<br>
+                        - Constructor(titulo, autor, año de publicación, formato): Inicializa el título, autor, año
+                        en que lanzó y formato del libro digital.<br>
+                        - MostrarFormato(): Muestra un alert con el formato del libro digital.<br>
+                        Permite al usuario ingresar información sobre un libro físico y un libro digital a través
+                        de prompts y muestra sus detalles y formatos respectivos utilizando los métodos
+                        correspondientes.
+
+                    </p>
+                    <input type="button" value="Comezar" onclick="starAndShow4()" class="botonAzul">
+                </div>
+                <div class="div_container">
+                    <h2 class="h2_title">Ejercicio 6: Map para nombres en mayúsculas</h2>
+                    <p class="contenido">
+                        Crea un array de nombres y utiliza el método map para convertir todos los nombres
+                        a mayúsculas. Luego, muestra los nombres en mayúsculas utilizando alert.
+                    </p>
+                    <p id="result"></p>
+                    <input type="text" id="names" placeholder="Ingrese un nombre"><br>
+                    <input type="button" value="Ingresar" onclick="pushToList()" class="botonAzul">
+                        <input type="button" value="Convertir" onclick="convertToUpperCase()" class="botonAzul">
+                </div>
+                <div class="div_container">
+                    <h2 class="h2_title">Ejercicio 7: Encontrar un número en un array</h2>
+                    <p class="contenido">
+                        Crea un array de números y utiliza el método find para buscar un número específico
+                        ingresado por el usuario utilizando un prompt. Si el número se encuentra, muestra un
+                        mensaje utilizando alert.
+                    </p>
+                    <input type="button" value="Comenzar" onclick="searchNumber()" class="botonAzul">
+                </div>
+                <div class="div_container">
+                    <h2 class="h2_title">Ejercicio 8: Filtrar números pares</h2>
+                    <p class="contenido">
+                        
+                        Crea un array de números y utiliza el método filter para obtener un nuevo array que
+                        contenga solo los números pares. Muestra los números pares utilizando alert.
+                    </p>
+                    <input type="button" value="Comenzar" onclick="displayListOfPairs()" class="botonAzul">
+                </div>
+        </section>
+        <footer class="footer_conteiner"></footer>
+        <script src="scrpt_tp2.js"></script>
+</body>
+
+</html>

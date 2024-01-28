@@ -1,0 +1,20 @@
+@import url(./globla_style.css);
+
+.conteiner{
+    display: flex;
+    margin: 2rem 8;
+}
+
+.imagen{
+    flex: 50%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.text{
+    flex:50%;
+}
+
+.conteiner img{
+    height: 20rem;
+}

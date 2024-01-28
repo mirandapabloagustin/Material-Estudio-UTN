@@ -1,0 +1,46 @@
+header{
+    font: 1.5em sans-serif;
+    text-align: center;
+}
+body{
+    background-image: url('Background_Body.png');
+        /* Reemplaza 'ruta-de-tu-imagen.jpg' con la URL o la ruta de tu imagen */
+        background-size: cover;
+        /* Ajusta el tamaño de la imagen para cubrir todo el fondo del footer */
+        /* Evita que la imagen se repita */
+        background-position: center center;
+        /* Centra la imagen en el footer */
+        height: 200px;
+}
+.section_container{
+    justify-content: space-around;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.div_container, .div_card, .div_img{
+    border: 1px solid #000;
+        /* Borde de 1px sólido con color gris claro */
+        border-radius: 10px;
+        /* Bordes redondeados de 10px */
+        box-shadow: 5px 5px 10px rgba(218, 81, 81, 0.2);
+        padding: 1%;
+        /* Espacio interno para el contenido */
+        margin: 3px;
+        background-color: #fff;
+}
+
+.footer_conteiner{
+
+    background-image: url('BackGroundCheddarFries.png');
+    /* Reemplaza 'ruta-de-tu-imagen.jpg' con la URL o la ruta de tu imagen */
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir todo el fondo del footer */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center center;
+    /* Centra la imagen en el footer */
+    color: #fff;
+    height: 200px;
+}
+

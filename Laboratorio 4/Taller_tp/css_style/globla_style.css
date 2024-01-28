@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap%27');
+
+
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+    *,*:after, *:before {
+        box-sizing: inherit;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Oswald';
+    }

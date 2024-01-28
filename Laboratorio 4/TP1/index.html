@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio IV</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/logic.js"></script>
+</head>
+
+<body>
+    <h1>TRABAJO PRACTICO 1</h1>
+    <div class="contenedorGral">
+        <div class="contenedor">
+            <h3>Ejercicio 1:</h3>
+            <p>1- Recibir una edad y mostrar si es mayor de edad o no.</p>
+            <input type="number" id="edad" min="0" max="120" placeholder="Ingrese su edad">
+            <input type="button" value="Enviar" onclick="averiguarEdad()" class="botonAzul">
+            <p id="resultadoEjer1"></p>
+        </div>
+        <div  class="contenedor">
+            <h3>Ejercicio 2:</h3>
+            <p>2- Recibir una nota y mostrar su calificación correspondiente.</p>
+            <ol id="tablaCont2">
+                <li>0-3: Muy deficiente</li>
+                <li>3-5: Insuficiente</li>
+                <li>5-6: Suficiente</li>
+                <li>6-7: Bien</li>
+                <li>7-9: Notable</li>
+                <li>9-10: Sobresaliente</li>
+            </ol>
+            <input type="number" id="nota" placeholder="Ingrese su nota">
+            <input type="button" value="Enviar" onclick="averiguarNota()" class="botonAzul">
+            <p id="resultadoEjer2"></p>
+        </div>
+        <div class="contenedor">
+            <h3>Ejercicio 3:</h3>
+            <p>3- Realiza un script que pida por teclado 3 edades y 3 nombres e indique el
+                nombre del mayor</p>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            <input type="number" id="edad2" placeholder="Ingrese su edad">
+            <br>
+            <input type="button" value="Enviar" onclick="almacenarEdades()" class="botonAzul">
+            <input type="button" value="Limpiar" onclick="limpiarArreglo()" class="botonAzul">
+            <p id="respuestaEjer3"></p>
+        </div>
+    </div>
+    <div class="contenedorGral">
+        <div class="contenedor">
+            <h3>Ejercicio 4:</h3>
+            <p>4- Realiza un script que pida un texto y lo muestre en mayúsculas.</p>
+            <input type="text" id="cadena" placeholder="Ingrese un texto">
+            <input type="button" value="Enviar" onclick="mostrarMayusculas()" class="botonAzul">
+            <p id="respuestaEjer4"></p>
+        </div>
+        <div class="contenedor">
+            <h3>Ejercicio 5:</h3>
+            <p>5- Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :</p>
+            <ol id="tablaCont5">
+                <li>1</li>
+                <li>22</li>
+                <li>333</li>
+                <li>4444</li>
+                <li>55555</li>
+                <input type="button" value="Generar" onclick="piramideNumeros()" class="botonAzul">
+                <p id="respuestaEjer5"></p>
+        </div>
+        <div class="contenedor">
+            <h3>Ejercicio 6:</h3>
+            <p>6- Realiza un script que escriba los números del 1 al 500, que indique cuáles son
+            múltiplos de 4 y de 9.</p>
+            <input type="button" value="Generar" onclick="multiplos()" class="botonAzul">
+            <p id="respuestaEjer6"></p>
+            <p id="multiplos"></p>
+        </div>
+    </div>
+    <div class="contenedorGral">
+        <div class="contenedor">
+            <h3>Ejercicio 7:</h3>
+            <p>7- Realiza un script que pida números hasta que se ingrese 0. Si no es un número
+            deberá indicarse con un «alert» y seguir pidiendo. Al salir con 0 deberá indicarse la
+            suma total de los números introducidos</p>
+            <input type="number" id="numero3" placeholder="Ingrese un numero">
+            <input type="button" value="Enviar" onclick="sumatoria()" class="botonAzul">
+            <p id="respuestaEjer7"></p>
+        </div>
+        <div class = "contenedor">
+            <h3>Ejercicio 8:</h3>
+            <p>8- Realiza un script que pida cadenas de texto hasta que se ingrese “fin”. Al salir
+            con “fin” deben mostrarse todas las cadenas concatenadas con un guión (-).</p>
+            <input type="text" id="cadena2" placeholder="Ingrese un texto">
+            <input type="button" value="Enviar" onclick="concatenar()" class="botonAzul">
+            <p id="respuestaEjer8"></p>
+        </div>
+        <div class="contenedor">
+            <h3>Ejercicio 9:</h3>
+            <p>9- Realiza un script que cuente el número de vocales que tiene un texto</p>
+            <input type="text" id="cadena3" placeholder="Ingrese un texto">
+            <input type="button" value="Enviar" onclick="contarVocales()" class="botonAzul">
+            <p id="respuestaEjer9"></p>
+        </div>
+    </div>
+    <div class="contenedorGral">
+        <div class="contenedor">
+            <h3>Ejercicio 10:</h3>
+            <p>10- Realiza un script que pida una cadena de texto y la devuelva al revés</p>
+            <input type="text" id="cadena4" placeholder="Ingrese un texto">
+            <input type="button" value="Enviar" onclick="invertirCadena()" class="botonAzul">
+            <p id="respuestaEjer10"></p>
+        </div>
+        <div class="contenedor">
+            <h3>Ejercicio 11:</h3>
+            <p>11- Crea un programa que calcule el área de un círculo. Pide al usuario que ingrese
+            el radio y muestra el resultado</p>
+            <input type="text" id="radio" placeholder="Ingrese el radio del circulo">
+            <input type="button" value="Enviar" onclick="calcularArea()" class="botonAzul">
+            <p id="respuestaEjer11"></p>
+        </div>
+        <div class="contenedor">
+            <h3>Ejercicio 12:</h3>
+            <p>12- Crea un programa que verifique si un número ingresado por el usuario es
+            positivo, negativo o cero.</p>
+            <input type="text" id="numero4" placeholder="Ingrese un numero">
+            <input type="button" value="Enviar" onclick="verificarNumero()" class="botonAzul">
+            <p id="respuestaEjer12"></p>
+            
+        </div>
+    </div>
+    <div class="contenedorGral">
+        <div class="contenedor">
+            <h3>Ejercicio 13:</h3>
+            <p>3- Crea un programa que tome un arreglo de nombres ingresados por el usuario
+            y muestre la lista ordenada alfabéticamente.</p>
+            <input type="text" id="nombre2" placeholder="Ingrese un nombre">
+            <br>
+            <input type="button" value="Enviar" onclick="almacenarNombres()" class="botonAzul">
+            <input type="button" value="Ordenar" onclick="ordenarArreglo()" class="botonAzul">
+            <p id="respuestaEjer13"></p>
+        </div>
+        <div class="contenedor">
+            <h3>Ejercicio 14:</h3>
+            <p>14- Crea un programa que encuentre el número más pequeño y el más grande en
+            un arreglo de números ingresados por el usuario</p>
+            <input type="text" id="numero5" placeholder="Ingrese un numero">
+            <br>
+            <input type="button" value="Enviar" onclick="almacenarNumeros()" class="botonAzul">
+            <input type="button" value="Buscar" onclick="buscarNumero()" class="botonAzul">
+            <p id="respuestaEjer14"></p>
+
+        </div>
+        <div class="contenedor">
+            <h3>Ejercicio 15:</h3>
+            <p>15- Crea un programa que tome una frase ingresada por el usuario y cuente
+            cuántas palabras contiene</p>
+            <input type="text" id="frase" placeholder="Ingrese una frase">
+            <input type="button" value="Enviar" onclick="contarPalabras()" class="botonAzul">
+            <p id="respuestaEjer15"></p>
+        </div>
+    </div>
+</body>
+
+</html>
