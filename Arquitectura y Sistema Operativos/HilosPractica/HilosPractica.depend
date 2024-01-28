@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1667747331 source:c:\users\agus-notebook\desktop\facultad\2do cuatrimestre\arquitectura y sistema operativos\hilospractica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	<conio.h>
+	<windows.h>
+	<stdbool.h>
+	<semaphore.h>
+

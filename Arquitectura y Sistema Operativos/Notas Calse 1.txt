@@ -1,0 +1,102 @@
+Funciones principales:
+
+* - Maquina de la Extendida:
+    Se la parte de la interfas de lo que seria el Sistema Operativo sin 
+ver los procesos que estan detras para poder manejar el sistema.
+
+* - Controlador de Recursos:
+    Controla y ordena los procesos, memoria, dispositivos entre varios 
+programas. Esta al tanto de los procesos de determinado recursos.
+
+===========================================================================
+Primera Generacion 1945 - 1955
+   Grandes computadoras y muy lentas, su inoca funcion eran sistemas numericos. Con generacion de
+mucho calor. La programacion se hacia en lenguaje maquina por completo.
+
+Segunda Generacion 1955 - 1965
+   Implementaron los transistores.
+
+Tercera generacion 1965-1980
+   Implementaron manejo de computo cientificos como comerciales y familiares. Se vio la multiprogramacion
+que dividian la memeoria para trabajar cada una con su parte
+El spooling () y el sistema fueron la clave de esta generacion - !!!!
+
+Cuarta Genracion 1980 - al Presente
+    Circuitos y chips integrados que dieron paso a las computadoras personales.
+===========================================================================
+Procesos
+   - Que es un programa ?
+   Es un codigo escrito en un disco que con un objetivo a cumplir sin ejecutar. Que cuando es ejecutado
+pasa a ser en un proceso. 
+   Basicamente un programa en ejecucion, consta de codigo,sus datos  y pila
+contador y otros registros.
+Estos procesos pueden ser interrumpidos y liberados permitiendo dar lugar a otros 
+procesos y pudiendo reanudar su estado en el que fue dejado.
+   Sistema Operativo es el que decide quien tiene prioridad de proceso, dependiendo su configuracion.
+===========================================================================
+Llamadas al Sistema
+   El proceso se comunica con el SO y solicita servicios necesarios para su ejecucion, ya que es el sistema quien conoce lo que tiene para brindar.Todo a trabes del BUS de Datos.
+===========================================================================
+Archivos
+   El sistema es el que se encarga de la manipulacion de archivos. Estos se encuentran mediante la "Ruta de acceso" desde el directorio raiz.
+===========================================================================
+Shell o Interprete de Comando
+   Es la interfaz entre el SO y el Usuario, por ejemplo es el (TERMINAL DE COMANDOS O EL WINDOWS), traduce las acciones del usuario a idioma maquina.
+   No es parte del SO pero es lo que peermite la interaccion. 
+===========================================================================
+Kernel
+   Es el nucleo del SO, se ocupa de mediar entre el Hadware y el Sofware. El la parte de bajo nivel, de ejecucion multi hilo y ocupa siempre espacio en la memoria. Gestiom de ,memoria, disco y controla las tareas de Ejecucion.
+===========================================================================
+Clasificacion por Caracterirsticas
+Se pueden Dividir:
+
+* Estructura Molitica: Son compilados con todas su funcionalidad en un solo bloque, esta compuesto de varias rutinas estan interconectadas entre si.
+      - Modulos separados
+      - Carecen de proteccion y privilegios 
+      - Hechos para determinada Tarea ( Control de Vuelo de avion ).
+
+* Etructura Jerarquia: Divide al sistema en diferentes partes, esta bien definidas con clara interfaz.
+
+* Por anillos: Es similar a la anterior.
+
+*Maquina Virtual: Simula una maquina que corre determinado proceso y que genera un proceso con la maquina real. integrar diferentes SO dando la sensacion de varias maquinas diferentes.
+
+*Cliente - Servidor (Micro Kernel): Una sistema servidor y varios sistemas cliente, que el servidor va a tener que encargarce con la proteccionde recursos en comparacion de los quientes lo unico que hacen es solicitar.
+
+===========================================================================
+Por Servicion
+
+- Numero de Usuarios:
+
+        * Monousuarios : Son los que soportan un usuario a la vez, sin importar los procesos que ejecute este mismo.
+        * Multiusuarios:  son capaces de dar servicios a mas de un usuario a la ves, sin importar los procesos que ejecutan estos mismo.
+--------------------------------------------------------------------------
+- Numero de tareas:
+
+        * monotareas: Solo so lo que permiten realizar una tarea a la vez 
+multitarea : permite que el usuario realize varias tareas a la vez. 
+--------------------------------------------------------------------------
+- Numero de procesos:
+
+	*Uniproceso: es aquel que maneja solamente un proceso a la vez en la computadora.
+	*Multiproceso: capacidada de realizar varios procesos a la vez.
+		- Asimetrica: El sistema elije un procesador maestro que controla el resto de procesadores que serian esclavos.
+		- Simetrica: los procesos son enviados a cualquier porceso disponibles.
+===========================================================================
+Interrupcion
+
+	Es la accion que el sistema operativo tiene que hacer para detener la ejecucion del proceso que esta haciendo en ese momento para realizar una accion importante. 
+	* El SO toma el control.
+	* Almacena el estado del proceso.
+	* Se ejecuta la rutina de servicio.
+	* Restaura el porceso interrumpido.
+	* Se ejecuta el siguiente proceso que seleccione el planificador.
+
+Clases de interrupcion:
+	De Programa: Un programa genera una intruccion que supera el espacio de la memoria permitido.
+	Por Temporizador: 
+===========================================================================
+
+
+
+
