@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1636676593 source:c:\users\rodri\documents\facultad\tsp\2021\programacion ii\parciales\repaso-2do-parcial\parcial-2-nov-2019\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1636676593 source:d:\tecnicatura en programacion\2do cuatrimestre\pri\lab 2\modelos examen lab 2\2do parcial lab 2 - modelo examen\parcial-2-nov-2019\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
