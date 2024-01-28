@@ -1,0 +1,160 @@
+/**
+    TEMAS DE HOY
+
+    MOSTRAR LISTA -> MOSTRAR NODO -> MOSTRAR PERSONA
+    modularizando
+
+    diferencia entre recursividad e iteracion para mostrar lista
+
+    ARCHIVOS con listas
+
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/// CTRL + B: agrega un marcador
+/// ALT + arriba o abajo: me muevo entre los marcadores
+
+typedef struct
+{
+    int edad;
+    char nombre[30];
+} stPersona;
+
+typedef struct
+{
+    stPersona dato;
+    struct nodo* siguiente;
+}nodo;
+
+nodo* inicLista()
+{
+    return NULL;
+}
+
+nodo* crearNodo(stPersona dato)
+{
+    nodo* nuevoNodo;
+
+    nuevoNodo = (nodo*) malloc(sizeof(nodo));
+
+    nuevoNodo->dato = dato;
+    nuevoNodo->siguiente = NULL;
+
+    return nuevoNodo;
+}
+
+nodo* agregarPrincipio(nodo* lista, nodo* nuevoNodo)
+    lista = nuevoNodo;
+{
+    if(lista != NULL)
+        nuevoNodo->siguiente = lista;
+
+
+    return lista;
+}
+
+void mostrarDato(stPersona dato)
+{
+    printf("edad: %i \n", dato.edad);
+    printf("nombre: %s \n", dato.nombre);
+}
+
+void mostrarNodo(nodo* nodoActual)
+{
+    mostrarDato(nodoActual->dato);    
+}
+
+void mostrarLista(nodo* lista)
+{
+    if(lista != NULL)
+    {
+        nodo* iterador = lista;
+        while(iterador != NULL)
+        {
+            iterador = iterador->siguiente;
+            mostrarNodo(iterador);
+        }
+    }
+}
+
+void mostrarRecursivo(nodo* iterador)
+{
+    if(iterator != NULL)
+    {
+        mostrarNodo(iterador);
+        mostrarRecursivo(iterador->siguiente);
+    }
+}
+
+void mostrarArchivo(char nombreArchivo[30])
+{
+    FILE* archivo = fopen(nombreArchivo, "rb");
+    
+    if(!archivo)
+    {
+        stPersona persona;
+        while(fread(&persona, sizeof(persona), 1, archivo) > 0)
+        {
+            mostrarDato(persona);
+        }
+        
+        fclose(archivo);
+    }
+}
+
+void mostrarArchivoRecursivo(FILE* archivo)
+{   
+    stPersona persona;
+    
+    if(fread(&persona, sizeof(persona), 1, archivo) > 0))
+    {
+        mostrarDato(persona);
+        mostrarArchivoRecursivo(archivo);
+    }
+}
+
+void mostrarArchivoRecursivoParaAtras(FILE* archivo)
+{   
+    stPersona persona;
+    
+    if(fread(&persona, sizeof(persona), 1, archivo) > 0))
+    {
+        mostrarArchivoRecursivo(archivo);
+        mostrarDato(persona);
+    }
+}
+
+void mostrarArchivo(char nombreArchivo[30])
+{
+    FILE* archivo = fopen(nombreArchivo, "rb");
+    
+    if(archivo != NULL)
+    {
+        mostrarArchivoRecursivo(archivo);
+        
+        fclose(archivo);                
+    }
+}
+
+int main()
+{
+    mostrarArchivo("nombre.bin");
+    mostrarArchivo("nombre2.bin");
+    mostrarArchivo("nombre3.bin");
+    mostrarArchivo("nombre4.bin");
+        
+    nodo* lista = inicLista();
+
+    lista = agregarPrincipio(lista, crearNodo((stPersona){33, "Matias"}));
+    lista = agregarPrincipio(lista, crearNodo((stPersona){34, "Pablo"}));
+    lista = agregarPrincipio(lista, crearNodo((stPersona){35, "Ezequiel"}));
+    lista = agregarPrincipio(lista, crearNodo((stPersona){36, "Mati"}));
+    lista = agregarPrincipio(lista, crearNodo((stPersona){37, "Pablo"}));
+    
+    return 0;
+}
+
+
+
