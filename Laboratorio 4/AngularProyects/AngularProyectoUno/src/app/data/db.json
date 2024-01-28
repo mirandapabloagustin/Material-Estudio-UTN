@@ -1,0 +1,34 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombreUsuario": "admin",
+            "email": "admin@gmail.com",
+            "contrasenia": "admin123"
+        },
+        {
+            "id": 2,
+            "nombreUsuario": "jorgekaz",
+            "email": "jorgekaz@hotmail.com",
+            "contrasenia": "1234"
+        },
+        {
+            "id": 3,
+            "nombreUsuario": "userTestLunes",
+            "email": "userTest@gmail.com",
+            "contrasenia": "userTest12345"
+        },
+        {
+            "id": 4,
+            "nombreUsuario": "",
+            "email": "",
+            "contrasenia": ""
+        },
+        {
+            "id": 5,
+            "nombreUsuario": "jorgekaz",
+            "email": "jorgekaz@hotmail.com",
+            "contrasenia": "123456"
+        }
+    ]
+}

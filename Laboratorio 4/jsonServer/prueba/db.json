@@ -1,0 +1,29 @@
+{
+  "publicaciones": [
+    {
+      "id": 1,
+      "título": " servidor-json ",
+      "autor": " typicode "
+    },
+    {
+      "id": 2,
+      "título": "servidor-json",
+      "autor": " typicode "
+    },
+    {
+      "id": 3,
+      "título": "pepino-servidor-json",
+      "autor": " typicode "
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 1,
+      "cuerpo": " algún comentario ",
+      "postId": 1
+    }
+  ],
+  "perfil": {
+    "nombre": " código típico "
+  }
+}

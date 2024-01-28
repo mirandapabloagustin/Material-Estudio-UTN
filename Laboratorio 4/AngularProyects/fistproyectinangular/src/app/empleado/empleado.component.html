@@ -1,0 +1,26 @@
+<div class = "div-contenedor-empleado">
+<h3>Datos Empleado</h3>
+    <span>Nombre: {{nombre}}</span>
+    <br>
+    <span>Apellido: {{apellido}}</span>
+    <br>
+    <span>Edad: {{_edad < 18 ? "Es menor de Edad": "Es mayor de Edad"}}</span>
+    <br>
+    <span>Empresa: {{ingresoEmpresa.value}}</span>
+    <br>
+    <div class="div-component">
+        <span id="response">
+            {{textoEstadoCuenta}}
+        </span>
+        <br>
+        Introducir Empresa : <input type="text" #ingresoEmpresa/>
+        <input type="button" value="Cargar" (click)="establecerEmpresa(ingresoEmpresa.value)" [disabled]="cuadroTextoHab">
+        <br>
+
+        <input type="radio" [checked]="usuarioConectado"  (click)="setUsuarioRegistrado()"> Precione para Registrarse 
+        <br>
+        <input type="radio" [checked]="usuarioConectado" (click)="setUsuarioRegistrado()"> Precione para Desconectarse
+    </div>
+</div>
+
+ 

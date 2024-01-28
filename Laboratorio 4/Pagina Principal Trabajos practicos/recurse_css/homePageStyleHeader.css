@@ -1,0 +1,75 @@
+@import url("./globalStyle.css");
+header{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.div-header-container{
+    display: flex;  
+    background-color: black;
+}
+
+.nav-items-navegation{
+    display: flex;
+    width: 100%;
+}
+
+.div-conteiner-logo-tittle{
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#tittle{
+    font-size: 30px;
+    color: white;
+    padding-left: 10px;
+}
+
+#logo-tittle {
+    width: 100px;
+    height: 100px;
+    justify-content: start;
+}
+
+.div-header-links{
+    width: 100%;
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+}
+
+.link-navegation{
+    padding:50px 20px 50px 20px;
+}
+
+.link-navegation:hover{
+    background-color: var(--primary-color);
+}
+
+.search-conteiner{
+    position: relative;
+    align-items: center;
+}
+
+.input-search{
+    padding: 6px 6px 6px 15px;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    outline: none;
+}
+
+.button-search{
+    position: absolute;
+    background-color: #fff;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+    padding: 4px 10px 0px 0;  
+}
+
+#logo-search{
+    width: 20px;
+    height: 20px;
+    ;
+}

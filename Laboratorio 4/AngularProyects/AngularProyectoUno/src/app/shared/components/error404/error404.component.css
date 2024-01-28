@@ -1,0 +1,15 @@
+.container-error-text{
+    text-align: center; /* Centrar el contenido en el div */
+    padding: 20px; /* Añadir espacio alrededor del contenido */
+    background-color: #f8d7da; /* Color de fondo rojo claro */
+    color: #721c24; /* Color de texto rojo oscuro */
+    border: 1px solid #f5c6cb; /* Borde rojo claro */
+    border-radius: 5px; /* Esquinas redondeadas */
+  }
+  
+  /* Estilo para el texto del mensaje de error 404 */
+  .error-message {
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 10px; /* Margen inferior */
+  }

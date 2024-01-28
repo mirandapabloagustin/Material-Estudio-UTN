@@ -1,0 +1,45 @@
+/* Estilos para el pie de página */
+.footer {
+    background: #252932;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  /* Estilos para el contenido del pie de página */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para las columnas en el pie de página */
+  .footer-column {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Estilos para los enlaces en el pie de página */
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para los íconos de redes sociales */
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .social-icons a:hover {
+    color: #f56f3a;
+  }
+  

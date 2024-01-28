@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Esto centra verticalmente en la página */
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    /* Ancho del 100% del cuerpo */
+    max-width: 600px;
+    /* Ancho máximo deseado para el contenedor */
+    text-align: center;
+    /* Centra el contenido del contenedor */
+}
+
+.div-main-container {
+    width: 30%;
+    /* Ancho del 30% del contenedor */
+    background-color: #f0f0f0;
+    /* Color de fondo opcional */
+    padding: 20px;
+    /* Espaciado interno opcional */
+}
+
+#rta{
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#rta-function-callback{
+    color: green;
+    font-size: 12px;
+    font-weight: bold;
+}
