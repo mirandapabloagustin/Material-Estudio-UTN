@@ -1,0 +1,175 @@
+FUNCION:
+Sirven para descomponer el codigo y de esta manera reducen considerablemente la cantidad de codigo, separandolo en secciones de codigo mas simple y reutilizables.
+Ejemplo:
+	int menos(int dato)
+	{
+		return dato+dato;
+	}
+Cohecion:
+Cohecion funcional: tiene que realizar un unica tarea.
+Cohecion Secuencial: realiza varias acciones en un orden en particular de datos concretos.
+Cohesion de comunicacion: realiza accciones sobre los mismos datos dados.
+Cohecion temporal: 
+
+
+-------------------------------------------------------------------------
+PUNTEROS:
+Sirve para manipular las direcciones de meoria y almacenar datos.Su direccion de memoria no es albitraria y podemos acceder a ella con el & (undperson).
+Un puntero es una direccion de memoria que almacena otra direcciion de memoria del mismo tipo de dato del que esta almacenando.
+DOBLE PUNTERO:
+Son variables puntero que guardan dentro otras direcciones de memoria que son punteros que apuntan a otras variables que almacenan datos.
+
+a=10;
+*p=&a;
+**pp = &p;
+**pp = 20;
+a=20;
+
+
+
+------------------------------------------------------------------------------
+
+RECURSIVIDAD
+es una tecnica que olo unico es llamar la funcion dentro de si misma, un numero finito.
+Se compone de 2 partes 
+-Solucion trivial es la que le va a poner fin al agoritmo o a la recursividad.Conocida como la Condicion de Corte.
+-Cuando se llama a si misma.
+puede ser directa o indirecta 
+-Directa: Cuando se llama a si misma.
+-Indirectra: Es una recursividad que llama a otra que la ultima, llama devuelta a la primera.
+--------BUENA RECURSIVIDAD-------------
+- Condicion de Corte con su respectiva Solucion Trivial.
+- Una llamada a su recursion.
+- Que en cada llamada se hacerque a su Condicion de corte.
+- Cuando llegue a la Solucion Trivial, devuelve todos los elementos.
+-------------FUNCIONAMIENTO------------------
+La recursividad dentrod e la funcion genera que la misma cuando se autodefine dentro, la pone en pausa o suspende su ejecucion hasta la resolucion. Generando contantemente nuevos espacios de memoria para resolverse.
+Cada espacios tiene sus propias variables locales y estas valores propios.
+-------------RECURSION E ITERACION ---------------------
+--------- La estructura:
+-Iteracion: 
+-Recursividad: 
+--------- Las repeticion:
+-Iteracion: muestra los valores reales. no ambiguedades.
+-Recursividad: cuando se llama cierta cantidad de veces.
+--------- Terminacion:
+-Iteracion: Cuando la Condicion del IF falla -
+-Recursividad: Cuando la Condicion de corte es verdadera.
+--------- Repeticion Infinita:
+-Iteracion: Cuando Condicion del IF nunca es Falsa -
+-Recursividad: Cunado no hay acercamiento a la condicion de corte
+--------- PORBLEMA DE RECURSIVIDAD:
+Si la recusividad se llama de manera repetida, puede ocacionar sobrecarga en el procesador y la memoria 
+Se recomienda el uso de la recusividad cuando no se puede resolver iterativamente y la recursividad es satisface.
+
+--------------------------------------------------------------------------------------
+TIPO DE DATO ABSTRACTO
+Es un tipo de dato definido por el programador para manipular un modo similar los tipod e datos definidos por el sistema 
+Estos tienen una Identidad, un comportamiento que le permite interactuar con el mismo y es independiente al tipod e lenguaje.
+
+Estas maneja un tipo de estructuras dinamicas, que son un conjunto de variables de un determiando tipo, agrupadas y organizadas de manera tal que demuestran un comportamiento.
+-Estadistico: Su tamaño de memoria fijo. [arreglos]
+-Dinamico: Su tamaño de memoria es variable [listas enlazadas por puntero, arboles]
+-------------------  MALLOC 
+Se refiere a la realizacion de la asignacion de memoriaa un puntero en tiempo de ejecucion.
+---------------------------------------------------------------------
+
+
+-----------------TIPOS-----------------------
+----  Una pila es una lista de Elementos, tipo LIFO (ultimo en entrar Primero en Salir), este elemento ultimo se conoce como Tope de la Pila.
+----  Lista enlazada en un conjunto secuencuencial de nodos que apuntan a su siguiente.Son de aspecto dinamico y solo se pueden accerder desde el puntero Inicial que es la Lista avanzando al puntero siguiente.
+Cada elemento de la lista resive el nombre de NODO, para accer a este se hace a traves de una variable de tipo puntero con nombre.( LISTA EN ESTE CASO ).El final de este enlazamiento de nodos esta determinado con el ultimo apuntando a NULL.Cada NODO contiene campo de informacion y el puntero del siguiente NODO siguiente ENLAZADO.
+---- Lista Doblemente enlazada: Es una estructura que contiene un conjunto de nodos enlazados secuensialmente - cada nodo tiene dos datos en donde se auntonombra a si mismo, a los cuales nmombra anterior y siguiente- si el siguiente es el ultimo nodo este apunta a NULL - y si el nodo es el primero, ANTERIOR apunta a NULL.
+Esta misma permite la facilidad de recorrerla en cualquier sentido y si se quiere agregar o eliminar cualquier DATO se tienen que modificar mas enlaces que en una lista enlazada simple
+
+---------------------------------------------------------------------------------------------
+Es un conjunto finito de elementos con nodos.
+- El arbol es vacio cuando no tiene elemento ( NULL )
+- Un arbol binario es porque tiene un NODO IZQ y NODO DER que tambien son arbles que apuntan a NULL-
+
+fomas d emostrar el arbol
+- el pre orden va a tener el print dentro de la funcion en el principio
+- el in va a atener el print de la funcion en el medio 
+- el post va a tener el print dentrod de la funcion debajo de todo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

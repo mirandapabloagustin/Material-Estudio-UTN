@@ -1,0 +1,4 @@
+COLORES PARA C:
+
+podremos crear constantes para insertar colores en la consola:
+https://elpuig.xeill.net/Members/vcarceler/articulos/escape-ansi
